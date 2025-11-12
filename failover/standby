@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# NOTE:
+# This file will be installed in /config/failover/standby and it will
+# be called by /usr/lib/failover/f5standby
+#
+# - This file is for customer additions for tasks
+#   to be performed when failover goes to standby state
+#
+# - It is possible for this script to be called multiple times, so it
+#   should not persist on the system so it won't fill up the process table
+#
+

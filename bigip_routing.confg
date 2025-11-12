@@ -1,0 +1,48 @@
+#TMSH-VERSION: 17.5.1.3
+
+net routing profile bgp /Common/BGP_EXT {
+    adj-out enabled
+    aggregate-nexthop-check disabled
+    app-service none
+    as-local-count 1
+    bgp-multiple-instance disabled
+    defaults-from /Common/bgp
+    description none
+    extended-asn-cap enabled
+    max-paths {
+        ebgp 1
+        ibgp 1
+    }
+    nexthop-trigger {
+        delay 5
+        state disabled
+    }
+    rfc1771 {
+        path-select disabled
+        strict disabled
+    }
+    router-id any6
+}
+net routing profile bgp /Common/BGP_INT {
+    adj-out enabled
+    aggregate-nexthop-check disabled
+    app-service none
+    as-local-count 1
+    bgp-multiple-instance disabled
+    defaults-from /Common/bgp
+    description none
+    extended-asn-cap enabled
+    max-paths {
+        ebgp 1
+        ibgp 1
+    }
+    nexthop-trigger {
+        delay 5
+        state disabled
+    }
+    rfc1771 {
+        path-select disabled
+        strict disabled
+    }
+    router-id any6
+}

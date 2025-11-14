@@ -165,7 +165,6 @@ Configuration file defining route map adjustments used by the failover scripts.
 ## Version Information
 
 - **BIG-IP Version Tested:** 17.5.1.3
-- **Author:** Network Automation Team
 - **Purpose:** Automate BGP failover handling and traffic-group synchronization using F5 iCall and Bash scripting.
 
 ---
